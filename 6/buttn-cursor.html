@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button
+        {
+            outline: 0;
+            display: block;
+            margin: 0 0 10px 0;  
+            --height : 40px;
+            height: var(--height);
+            border-radius: calc(var(--height)/2);
+            padding: 0 24px;
+            text-align: center;
+            background-color: #6750A4;
+            color: cornsilk;
+            font-family: Roboto,sans-serif;
+            font-weight: bold;
+        }
+        .hovered:hover
+        {
+          cursor: pointer;
+          outline: 0;
+            background-color: yellow;
+            color:  #6750A4; 
+        }
+        .focused:focus
+        {
+            outline: 0;
+            background-color: yellow;
+            color:  #6750A4; 
+        }
+        .pressed:active
+        {
+            outline: 0;
+            background-color: yellow;
+            color:  #6750A4; 
+
+        }
+        .disabled:disabled
+        {
+            background-color: rgb(151, 151, 151);
+            color:  #e2d9ff; 
+        }
+
+    </style>
+</head>
+<body>
+    <button class = "enabled">enabled</button>
+    <button class = "hovered">hovered</button>
+    <button class = "focused">focused</button>
+    <button class = "pressed">pressed</button>
+    <button disabled class = "disabled">disabled</button>
+</body>
+</html>
