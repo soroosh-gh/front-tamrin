@@ -9,7 +9,7 @@ if( isset( $_POST['submit'] ) )
     $dbc = new DB ($dbhost , $dbuser ,$dbpass, $dbname, $dbcharset);
     if($_POST['password'] == '')
     {
-        $sql = "UPDATE user SET
+        $sql = "UPDATE 	membersinfo SET
             name = ?,
             username = ?,
             password = ?,
@@ -18,7 +18,7 @@ if( isset( $_POST['submit'] ) )
     }
     else
     {
-        $sql = "UPDATE user SET
+        $sql = "UPDATE 	membersinfo SET
             name = ?,
             username = ?,
             password = ?,
@@ -30,7 +30,7 @@ if( isset( $_POST['submit'] ) )
 }else 
 {
     $dbc = new DB ($dbhost , $dbuser ,$dbpass, $dbname, $dbcharset);
-    $sql = "SELECT * FROM user
+    $sql = "SELECT * FROM 	membersinfo
     WHERE id = ?";
     $result = $dbc -> query( $sql, $_GET['id'] );
     $row = $result -> fetchArray();   
