@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        .main {
+            border: 2px black solid;
+            border-radius: 15px;
+            Background-color: #006d3a;
+            padding: 3px;
+            margin: 3px;
+        }
+        
+        .i-o {
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 4px 10px 4px 10px;
+        }
+        
+        .button {
+            background-color: #99f6b5;
+            color: #0e0d01;
+            font-size: 20px;
+            border-radius: 3px;
+            ;
+        }
+        
+        .number {
+            background-color: #d2e9d4;
+            text-align: center;
+        }
+        
+        .number_topleft {
+            border-radius: 10px 0px 0px 0px;
+            background-color: #d2e9d4;
+            text-align: center;
+        }
+        
+        .number_topright {
+            border-radius: 0px 10px 0px 0px;
+            background-color: #d2e9d4;
+            text-align: center;
+        }
+        
+        .action_bottomleft {
+            border-radius: 0px 0px 0px 10px;
+            background-color: #d2e9d4;
+            text-align: center;
+        }
+        
+        .action_bottomright {
+            border-radius: 0px 0px 10px 0px;
+            background-color: #d2e9d4;
+            text-align: center;
+        }
+        
+        .button_action {
+            background-color: #00391a;
+            font-size: 20px;
+            padding: 0px 13px 0px 13px;
+            border-radius: 5px;
+            color: #dde5db;
+        }
+        
+        .action {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="main">
+        <tr>
+            <td colspan="3"><input class="i-o" type="text" id="result" /></td>
+            <td class="action"><input class="button_action" type="button" value="c" onclick="clr()" /> </td>
+        </tr>
+
+        <tr>
+
+            <td class="number_topleft"><input class="button" type="button" value="1"> </td>
+            <td class="number"><input class="button" type="button" value="2"> </td>
+            <td class="number_topright"><input class="button" type="button" value="3"> </td>
+            <td class="action"><input class="button_action" type="button" value="/"> </td>
+        </tr>
+        <tr>
+            <td class="number"><input class="button" type="button" value="4"> </td>
+            <td class="number"><input class="button" type="button" value="5"> </td>
+            <td class="number"><input class="button" type="button" value="6"> </td>
+            <td class="action"><input class="button_action" type="button" value="-"> </td>
+        </tr>
+        <tr>
+            <td class="number"><input class="button" type="button" value="7"> </td>
+            <td class="number"><input class="button" type="button" value="8"> </td>
+            <td class="number"><input class="button" type="button" value="9"> </td>
+            <td class="action"><input class="button_action" type="button" value="+"> </td>
+        </tr>
+        <tr>
+            <td class="action_bottomleft"><input class="button_action" type="button" value="."> </td>
+            <td class="number"><input class="button" type="button" value="0"> </td>
+            <td class="action_bottomright"><input class="button_action" type="button" value="="> </td>
+            <td class="action"><input class="button_action" type="button" value="*"> </td>
+        </tr>
+    </table>
+</body>
+
+</html>
